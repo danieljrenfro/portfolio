@@ -1,0 +1,259 @@
+@import url(https://fonts.googleapis.com/css2?family=Righteous&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap);
+
+/* Declaring box-sizing: border-box. */
+
+* {
+  box-sizing: border-box;
+}
+
+header, footer {
+  text-align: center;
+  padding: 10px;
+  margin-left: 0;
+  margin-right: 0;
+  background-color: #033F63;
+}
+
+footer p {
+  color: #fff;
+}
+
+main {
+  color: lightcyan;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* Code to style the headers. */
+
+h1 {
+  color: #fff;
+  font-size: 40px;
+  font-family: "Righteous";
+  margin: 15px 0px 15px 0px;
+}
+
+h2 {
+  color: #033F63;
+  font-size: 30px;
+  font-family: "Righteous";
+  margin: 0px 0px 0px 0px;
+}
+
+section > h2 {
+  margin-left: 10px;
+}
+
+h3 {
+  color: #033F63;
+  font-size: 22px;
+  margin: 5px 0 5px 0;
+  font-family: "Righteous";
+}
+
+p {
+  color: #2D3142;
+  font-family: "Roboto Mono";
+  font-weight: 300;
+  margin: 15px 0 15px 0;
+}
+
+p a:link {color: #033F63;}
+p a:visited {color: #033F63;}
+
+/* List styling. */
+
+.lists {
+  background: #033F63;
+  font-family: "Roboto Mono";
+  font-weight: 300;
+  color: white;
+  list-style-position: inside;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  margin: 3px 10px 3px 10px;
+}
+
+ul {
+  list-style: none;
+  margin: 0px;
+}
+
+li {
+  padding-bottom: 4px;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin: 20px 0px 20px 0px;
+  padding: 0px 10px 0px 10px;
+}
+
+.item {
+  flex: 1;
+  margin-bottom: 5px;
+}
+
+.item-large {
+  flex: 3;
+}
+
+/* Turns image into circle. */
+
+.item img {
+  width: 100%;
+  padding: 0px;
+  border-radius: 50%;
+}
+
+/* Nav-Bar Styling */
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 20px 0 0;
+  font-family: "Roboto Mono";
+  font-weight: 300;
+}
+
+header nav ul li:last-child a {
+  margin-right: 5px;
+}
+
+/* Form styling */
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+label {
+  color: #033F63;
+  font-size: 18px;
+  font-family: "Roboto Mono";
+  font-weight: 300;
+  padding-bottom: 5px;
+}
+
+input[type=text] {
+  margin-bottom: 5px;
+  border-radius: 3px;
+  border: 1px solid #033F63;
+  width: 100%;
+}
+
+textarea {
+  margin-bottom: 5px;
+  border-radius: 3px;
+  border: 1px solid #033F63;
+  height: 5rem;
+  width: 100%;
+}
+
+button {
+  background-color: #033F63;
+  color: #fff;
+  font-family: "Roboto Mono";
+  font-weight: 300;
+  height: 40px;
+  border-radius: 3px;
+  border: none;
+  font-size: 25px;
+}
+
+/* Pseudo-classes for the links. */
+
+ul a:link {color: #fff;}
+ul a:visited {color: #fff;}
+ul a:hover {color: #A2BCE0;}
+
+/* DESKTOP CODE BELOW */
+
+@media all and (min-width: 800px) {
+
+  /* Desktop nav-bar and header */
+
+  .header-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  header nav ul li a:hover {
+    color: #A2BCE0;
+  }
+
+  .group {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 0px;
+    margin-bottom: 55px;
+    padding: 0px 10px 20px 10px;
+  }
+
+  .intro-group {
+    padding-top: 20px;
+    align-content: center;
+  }
+
+  .item {
+    flex: 1;
+    margin: 5px 10px 0px 10px;
+  }
+
+  .item-large {
+    flex: 1.5;
+    align-self: center;
+    padding: 0px 200px 0px 0px;
+  }
+
+  .item img {
+    width: 100%;
+    padding: 0px;
+    border-radius: 50%;
+  }
+
+  .contact-list {
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 5px 20px 5px 20px;
+  }
+
+  .contact-list li a {
+    margin-right: 5px;
+  }
+
+  p {
+    font-size: 16px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+  }
+
+  p a:hover {color: #A2BCE0;}
+
+  section > h2 {
+    margin-left: 20px;
+  }
+
+  h2 {
+    margin: 10px 10px 0px 0px;
+  }
+}
