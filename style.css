@@ -53,6 +53,13 @@ h3 {
   font-family: "Righteous";
 }
 
+h4 {
+  color: #033F63;
+  font-size: 18px;
+  margin: 5px 0 5px 0;
+  font-family: "Righteous";
+}
+
 p {
   color: #2D3142;
   font-family: "Roboto Mono";
@@ -116,6 +123,18 @@ li {
   border-radius: 50%;
 }
 
+.project {
+  border: 2px solid #033F63;
+  border-radius: 3px;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.project img {
+  border-radius: 0%;
+  border-bottom: 2px solid #033F63;
+}
+
 /* Nav-Bar Styling */
 
 header nav ul {
@@ -177,6 +196,7 @@ button {
   border-radius: 3px;
   border: none;
   font-size: 25px;
+  cursor: pointer;
 }
 
 /* Pseudo-classes for the links. */
@@ -229,6 +249,18 @@ ul a:hover {color: #A2BCE0;}
     width: 100%;
     padding: 0px;
     border-radius: 50%;
+  }
+
+  /* PROJECTS */
+
+  .project {
+    border: 2px solid #033F63;
+    border-radius: 3px;
+    padding: 10px;
+  }
+
+  .project img {
+    border-radius: 0%;
   }
 
   .contact-list {
